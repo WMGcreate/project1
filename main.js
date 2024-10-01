@@ -107,9 +107,12 @@
     }
     window.addEventListener('load', aosInit);
 
-
-  });
-  
+    /**
+     * Initiate glightbox
+     */
+    const glightbox = GLightbox({
+      selector: '.glightbox'
+    });
 
     /**
      * Initiate Pure Counter
@@ -202,7 +205,7 @@
     }
 
   }); // End of DOMContentLoaded
-
+})();
 
 
 
